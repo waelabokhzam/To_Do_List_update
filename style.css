@@ -132,3 +132,15 @@ body p i{
   font-weight: bold !important;
   color: gold;
 }
+
+
+@media (max-width: 767px) {
+  .container{
+    width: 95%;
+    max-width: 95%;
+  }
+  .add{
+    width: 95%;
+    max-width: 95%;
+  }
+}
