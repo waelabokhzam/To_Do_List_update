@@ -1,0 +1,134 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+body {
+  background: linear-gradient(to bottom, rgb(59, 125, 247), rgb(8, 43, 119));
+  width: 100%;
+  min-height: 100vh !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 30px;
+  background-repeat: repeat-y;
+
+}
+
+h1 {
+  font-size: 30px;
+  font-family: sans-serif;
+  color: white;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 40%;
+  max-width: 50%;
+  padding: 10px 15px;
+}
+
+.container .box {
+  border: 2px solid gray;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.container .box .right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 10px;
+}
+.container .box i {
+  font-size: 23px;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+.container .box .fa-star:hover{
+  color: gold;
+  font-weight: bold;
+}
+.container .box .fa-face-angry:hover{
+  color: rgb(214, 4, 4);
+  font-weight: bold;
+
+}
+.container .box .fa-trash-can:hover{
+  color: rgb(125, 245, 12);
+  font-weight: bold;
+
+}
+.container .box p {
+  text-wrap: wrap;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: white;
+  letter-spacing: 1px;
+  padding: 0px 15px;
+}
+body p:first-of-type{
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+body p i{
+  color: yellow;
+  font-size: 20px;
+}
+.add{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 40%;
+  max-width: 45%;
+}
+.add input{
+  height: 40px;
+  border: none;
+  padding: 0px 20px;
+  border-radius: 10px;
+  outline: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-size: 17px;
+}
+.add button{
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.overline p{
+  text-decoration: line-through 4px rgb(243, 2, 2);
+}
+.overline .fa-face-angry{
+  color: rgb(214, 4, 4);
+  font-weight: bold !important;
+}
+.active .fa-star{
+  font-weight: bold !important;
+  color: gold;
+}
