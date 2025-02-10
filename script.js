@@ -4,6 +4,12 @@ let up = document.querySelector(".fa-arrow-up-from-bracket");
 
 let task = document.querySelector(".container");
 
+let clear = document.querySelector(".clear");
+
+if(localStorage.getItem("task")){
+  task.innerHTML = localStorage.getItem("task");
+  clear.style.display = "block";
+}
 // when click on up to create new task ;
 up.addEventListener("click", (eo) => {
 
@@ -16,6 +22,8 @@ up.addEventListener("click", (eo) => {
               <i class="fa-regular fa-trash-can"></i>
             </div>
         </div>`;
+        localStorage.setItem("task",task.innerHTML);
+        clear.style.display = "block";
   }
   else {
     Swal.fire({
@@ -46,4 +54,11 @@ task.addEventListener("click", (eo) => {
     default:
       break;
   }
-})
+});
+
+// when click on clear to delete all tasks ;
+clear.addEventListener("click", (eo) => {
+  task.innerHTML = "";
+  localStorage.clear();
+  clear.style.display = "none";
+}); 
